@@ -116,7 +116,7 @@ if(cmd === `${prefix}ban`){
     let commander = new Discord.RichEmbed()
     .setDescription("All Commands")
     .setColor("#00ffe9")
-    .setDescription("Prefix is [*] | commands,report,serverinfo,botinfo")
+    .setDescription("Prefix is [*] | commands,report,serverinfo,botinfo,kick,ban")
 
     return message.channel.send(commander);
   }
