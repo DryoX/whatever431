@@ -20,7 +20,7 @@ bot.on("message", async message => {
   if(cmd === `${prefix}report`){
 
     let rUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
-    if(!rUser) return message.channel.send("Couldn't find user - Creator:RtzFurry.");
+    if(!rUser) return message.channel.send("Couldn't find user.");
     let reason = args.join(" ").slice(22);
 
     let reportEmbed = new Discord.RichEmbed()
@@ -116,7 +116,7 @@ if(cmd === `${prefix}ban`){
     let commander = new Discord.RichEmbed()
     .setDescription("All Commands")
     .setColor("#00ffe9")
-    .setDescription("Prefix is [*] | commands,report,serverinfo,botinfo,kick,ban")
+    .setDescription("My Prefix is [*] | And My Commands Is: commands,report,serverinfo,botinfo,kick,ban")
 
     return message.channel.send(commander);
   }
